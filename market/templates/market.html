@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}
+  Market Page
+{% endblock %}
+
+{% block content %}
+        <h1 class="text-center my-4">Top Courses Pdf Books Download</h1>
+        <br><br>
+
+        <div class="row row-col-1 row-cols-md-3 m-auto my-4">
+        {% for book in books %}
+            <div class="m-auto col-md-3" id="cards">
+              <div class="card h-100">
+                <img src="{{ book.img_src }}" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">{{ book.name }}</h5>
+                  <p class="card-text" style="color:black">
+                    {{ book.description }}
+                    <br><br>
+                    <b>${{ book.price }}</b>
+                  </p>
+                  <a href="#" download
+                    target="_blank" class="btn btn-info" data-toggle="tooltip" data-bs-placement="right"
+                    title="Purchase Book">Purchase Book</a>
+                </div>
+              </div>
+              <br><br>
+            </div>
+        {% endfor %}
+        </div>
+
+{% endblock %}
+
