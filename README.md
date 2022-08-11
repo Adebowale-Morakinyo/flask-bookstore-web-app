@@ -2,7 +2,7 @@
 
 **A Book Store web app with authentication, validations, flash messages, login, logout and sign up customizations using flask and python.**
 
-Use this Flask app kickstart your book store project with less work. In this application template you will find the following plugins are utilized:
+Use this Flask app to kickstart your book store project with less work. In this application template you will find the following flask plugins already utilized:
 
 * **Flask-Login** - Flask-Login provides user session management for Flask.
 * **Flask-SQLAlchemy** - Adds SQLAlchemy support to Flask. Quick and easy.
